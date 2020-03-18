@@ -1,0 +1,101 @@
+body{
+    font-size:16px;
+    min-width: 1200px;
+    color:#333;
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.main .nav{
+    height:60px;
+    background-color:#47464a;
+    color:#999;
+    text-align:center;
+}
+.main .nav a{
+    line-height:60px;
+    margin:50px;
+}
+.main .nav a:hover{
+    color:#fff;
+}
+.main .nav a.select{
+    color:#ef4238;
+    cursor:default;
+}
+.main .container{
+    font-size:14px;
+    padding:0px 40px;
+    width:1120px;
+    margin:40px auto 20px;
+}
+.main .container .choose-area{
+    border:1px solid #e5e5e5;
+    padding:0px 20px;
+}
+.main .container .choose-area .partition{
+    margin:5px 0px;
+    float:left;
+    border-top:1px dotted #e5e5e5;
+}
+.main .container .choose-area .partition:nth-child(1){
+    border-top:none;
+}
+.main .container .choose-area .partition .partition-name{
+    padding:3px 9px;
+    height:24px;
+    line-height:24px;
+    float:left;
+    color:#999;
+}
+.main .container .choose-area .partition .partition-item ul{
+    margin-left:40px;
+
+}
+.main .container .choose-area .partition .partition-item li{
+    height:24px;
+    line-height:24px;
+    border-radius:14px;
+    padding:3px 9px;
+    margin-left:12px;
+    float:left;
+}
+.main .container .choose-area .partition .partition-item li:hover{
+    color:#ef4238;
+}
+.main .container .choose-area .partition .partition-item li.select{
+    background-color:#f34d41;
+    color:#fff;
+}
+.main .container .movie-list .movie{
+    width:160px;
+    margin:10px 30px 10px 0;
+    float:left;
+}
+.main .container .movie-list .movie:nth-child(6n){
+    margin-right: 0;
+}
+.main .container .movie-list .movie .poster img{
+    width:160px;
+    height:220px;
+}
+.main .container .movie-list .movie .name{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 2em;
+    text-align:center;
+}
+.main .container .movie-list .movie .score{
+    text-align:center;
+    font-size: 14px;
+    line-height:2em;
+    color:#ffb400;
+    font-style: italic;
+}
+.main .container .movie-list .movie .score::first-letter{
+    font-size:1.3em;
+}
+
