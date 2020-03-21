@@ -1,0 +1,30 @@
+/*#only {
+	background-color:red;
+}
+*/
+
+#only1 {
+	background-color:orange;
+}
+
+
+.demo {
+	background-color:yellow;
+}
+
+[id="only"] {
+	background-color: black;
+}
+
+.demo1 {
+	background-color:blue;
+}
+
+div {
+	background-color:orange;
+}
+
+* {
+	background-color:gray;
+}
+
