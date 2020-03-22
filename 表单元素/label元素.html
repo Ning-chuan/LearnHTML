@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 使用for+id关联 -->
+    <P>
+        性别：
+        <input id="male" type="radio" name="sex">
+        <label for="male">男</label>
+        <input id="female" type="radio" name="sex">
+        <label for="female">女</label>
+    </P>
+
+    <!-- 隐式关联 -->
+    <P>
+        性别：
+        <label>
+            <input type="radio" name="sex">男
+        </label>
+        <label>
+            <input type="radio" name="sex">女
+        </label>
+    </P>
+</body>
+</html>
