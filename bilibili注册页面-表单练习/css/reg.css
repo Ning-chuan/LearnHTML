@@ -1,0 +1,177 @@
+.clearfix::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+a{
+    font-size: 12px;
+    color:#00a1d6;
+    cursor: pointer;
+}
+.textright{
+    text-align: right;
+}
+
+.main .top-banner{
+    background-color: #00a0d8;
+    text-align: center;
+    height:86px;
+}
+.main .register-container{
+    width:980px;
+    margin:40px auto;
+    line-height: 1.5em;
+}
+.main .register-container .title{
+    text-align: center;
+}
+.main .register-container .title h1{
+    border-bottom:1px solid #ddd;
+    margin-bottom: -15px;
+    margin-top: 50px;
+}
+.main .register-container .title span{
+    font-size: 38px;
+    background-color: #fff;
+    padding:0 20px;
+}
+
+.main .register-container .register-form{
+    font-family:PingFang SC;
+    width:420px;
+    margin:40px auto;
+}
+.main .register-container .register-form .form-item{
+    margin:40px 0;
+    position: relative;
+}
+
+/* 手机号框 */
+.main .register-container .register-form .form-item .choose-area{
+    float: left;
+    width:129px;
+    line-height: 38px;
+    color:rgb(144, 147, 153);
+    position: relative;
+    border:1px solid #dcdfe6;
+    border-right:none;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+}
+.main .register-container .register-form .form-item .choose-area .selected-area{
+    padding-left: 20px;
+} 
+.main .register-container .register-form .form-item .choose-area .selected-area:hover{
+    border-color:#c0c4cc;
+}
+.main .register-container .register-form .form-item .choose-area ul{
+    position: absolute;
+    top:58px;
+    background-color: #fff;
+    border:1px solid #dcdfe6;
+    border-radius: 4px;
+    width:130px;
+    box-sizing: border-box;
+    height:300px;
+    overflow: auto;
+    display:none;
+}
+.main .register-container .register-form .form-item .choose-area ul li.selected{
+    font-weight: bold;
+    color:#00a1d6;
+}
+.main .register-container .register-form .form-item .choose-area ul li{
+    padding:0 20px;
+}
+.main .register-container .register-form .form-item .choose-area ul li:hover{
+    background-color: #f5f7fa;
+}
+.main .register-container .register-form .form-item .number-text input{
+    float:left;
+    width:288px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* 验证码框 */
+.main .register-container .register-form .form-item .verify-button{
+    width:130px;
+    height:36px;
+    position: absolute;
+    top:2px;
+    right:2px;
+
+}
+
+.main .register-container .register-form .readme{
+    font-size: 12px;
+    cursor: pointer;
+    margin:-32px 0;
+}
+.main .register-container .register-form .readme input{
+    display: none;
+}
+.main .register-container .register-form .readme .diy-checkbox{
+    display:inline-block;
+    line-height: 12px;
+    text-align: center;
+    color:#fff;
+    width: 12px;
+    height:12px;
+    border:1px solid #dcdfe6;
+    border-radius: 2px;
+}
+.main .register-container .register-form .readme input:checked+.diy-checkbox{
+    background-color: #00a1d6;
+    
+}
+
+
+
+/* 统一设置输入框样式 */
+input[type="text"],
+input[type="password"]{
+    width:100%;
+    border:1px solid #dcdfe6;
+    border-radius: 4px;
+    height:40px;
+    line-height: 40px;
+    font-size: 14px;
+    color:#606266;
+    text-indent:1em;
+    box-sizing: border-box;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder{
+    color:#c0c4cc;
+}
+input[type="text"]:hover,
+input[type="password"]:hover{
+    border-color:#c0c4cc;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+    border-color: #00a1d6;
+}
+
+/* 同意设置按钮样式 */
+button{
+    background-color: #00a1d6;
+    color:#fff;
+    border-radius: 4px;
+    height:40px;
+    width:100%;
+    text-align: center;
+    cursor: pointer;
+    font-size:14px;
+    font-weight:500px;
+}
+button:hover{
+    background-color: #33b4de;
+}
+button:disabled{
+    background: #f5f5f5;
+    color: rgba(70, 52, 52, 0.25);
+    border: 1px solid #d9d9d9;
+    box-sizing:border-box;
+    cursor: not-allowed;
+}
